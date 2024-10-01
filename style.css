@@ -32,8 +32,8 @@
     color: #fff;
     text-transform: uppercase;
 }
-.navbar ul li : ::after{
-     content::'';
+.navbar ul li ::after{
+     content:'';
      height: 3Px;
      width: 100%;
      background: #009600;
