@@ -4,116 +4,97 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
 .container {
+    height: 100vh;
     width: 100%;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url(images/background.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(./tea.shop.jpg);
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
 }
 
-nav {
-    width: 100%;
+.nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 30px 80px;
+    flex-wrap: wrap;
 }
 
-.logo {
-    width: 180px;
-    cursor: pointer;
-}
-
-nav ul {
-    list-style: none;
-    width: 100px;
-    text-align: right;
-    padding-right: 60px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 10px 20px;
-}
-
-nav ul li a {
+.nav-bar.title {
     color: #fff;
-    text-decoration: none;
-    transition: color 0.3s; /* Added hover effect */
-}
-
-nav ul li a:hover {
-    color: #f5168d; /* Example hover color */
-}
-
-.btn {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    border: 0;
-    outline: 0;
-    border-radius: 5px;
-    background: #f5168d;
-    color: #fff;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.btn img {
-    width: 20px;
-    margin-right: 10px;
-}
-
-.content {
-    margin-top: 14%;
-    color: #fff;
-    max-width: 620px;
-}
-
-.content h1 {
-    font-size: 70px;
+    font-size: 67px;
     font-weight: 600;
-    line-height: 85px;
-    margin-bottom: 25px;
+    cursor: pointer;
 }
 
-.content form {
-    display: flex;
-    align-items: center;
-    background: #fff;
+span {
+    color: crimson;
+}
+
+.nav-bar p {
+    margin-left: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: color 0.4s ease;
+}
+
+.menu li a:hover {
+    color: crimson;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+}
+
+.home {
+    height: 400px;
+    padding: 70px;
+}
+
+.title-1 {
+    font-size: 56px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.home p {
+    color: lemonchiffon;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.home button {
+    height: 40px;
+    color: #fff;
+    background: crimson;
+    font-size: 22px;
+    padding: 5px 30px;
+    margin-top: 20px;
+    border: none;
     border-radius: 5px;
-    padding: 10px;
-    margin-top: 30px;
+    transition: background 0.4s ease, border-color 0.4s ease;
+    cursor: pointer;
 }
 
-.content form input {
-    border: 0;
-    outline: 0;
-    width: 100%;
-    font-size: 16px;
-    padding-left: 10px;
+.home button:hover {
+    background: #fff; /* Consider changing this to something more visible */
+    border: 2px solid crimson;
 }
 
-.content form .btn {
-    font-size: 15px;
-    padding: 10px 30px;
-}
-
-@media (max-width: 768px) {
-    .content h1 {
-        font-size: 50px;
-        line-height: 60px;
-    }
-
-    .content form {
-        flex-direction: column;
-    }
-
-    .content form .btn {
-        width: 100%;
-        margin-top: 10px;
-    }
+.home button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.5);
 }
