@@ -1,100 +1,94 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+.{
+    margin: 0%;
+    padding: 0%;
 }
-.container {
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(./tea.shop.jpg);
+body{
+    background: rgb(0,0,0,0.7)url(pizza.jpg) center center fixed;
     background-size: cover;
-    background-position: center;
-    padding: 10px 8%;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-.nav-bar {
+.container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 80px;
-    flex-wrap: wrap;
 }
 
-.nav-bar.title {
-    color: #fff;
-    font-size: 67px;
-    font-weight: 600;
+.container h1{
+    color: orangered;
+    margin-left: 10px;
     cursor: pointer;
 }
 
-span {
-    color: crimson;
-}
-
-.nav-bar p {
-    margin-left: 50px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.menu li {
-    list-style: none;
+.navbar ul li{
     display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
 }
 
-.menu li a {
+.navbar ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 27px;
-    font-weight: 600;
-    margin-left: 25px;
-    transition: color 0.4s ease;
+    padding: 4px;
+    transition: 3.5s;
 }
 
-.menu li a:hover {
-    color: crimson;
-    padding: 5px 10px;
-    border: 2px solid #fff;
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset
+    0 3px 50px orangered inset,0 3px 50px orangered inset;
+    
 }
 
-.home {
-    height: 400px;
-    padding: 70px;
+.navbar .reservation{
+    padding: 8px;
+    background-color: orangered;
 }
 
-.title-1 {
-    font-size: 56px;
+.content{
+    position: absolute;
     color: #fff;
-    font-weight: 600;
+    top: 40%;
+    left: 30px;
 }
 
-.home p {
-    color: lemonchiffon;
+.content h3{
+    font-family: sans-serif;
     font-size: 20px;
-    padding-top: 10px;
+    margin-left: 30px;
 }
 
-.home button {
-    height: 40px;
-    color: #fff;
-    background: crimson;
-    font-size: 22px;
-    padding: 5px 30px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    transition: background 0.4s ease, border-color 0.4s ease;
-    cursor: pointer;
-}
+ .content h1{
+    font-size: 50px;
+ }
 
-.home button:hover {
-    background: #fff; /* Consider changing this to something more visible */
-    border: 2px solid crimson;
-}
+ .content p{
+    text-align: center;
+    margin-top: 17px;
+ }
 
-.home button:focus {
+ .search{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 42%;
+ }
+
+ .search input{
     outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.5);
-}
+    border: #fff;
+    padding: 12px 40px;
+    size: 1em;
+    width: 100%;
+ }
+
+ .submit{
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 49%;
+ }
+
+ .submit a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: orangered;
+ }
